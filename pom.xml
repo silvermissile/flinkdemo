@@ -93,6 +93,36 @@ under the License.
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.47</version>
         </dependency>
+        <!--  hive catalog local run -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-hive_2.11</artifactId>
+            <version>${flink.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-sql-connector-hive-2.3.6_2.11</artifactId>
+            <version>${flink.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-shaded-hadoop-2-uber</artifactId>
+            <version>2.7.5-8.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!-- Hive Dependency  Caused by: java.lang.NoClassDefFoundError: org/apache/hive/common/util/HiveVersionInfo-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.hive</groupId>-->
+<!--            <artifactId>hive-exec</artifactId>-->
+<!--            <version>2.3.7</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
+
 
         <!--		解析 kafka 的 json格式数据-->
         <dependency>
@@ -208,7 +238,7 @@ under the License.
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.myorg.quickstart.StreamingJob</mainClass>
+                                    <mainClass>org.myorg.quickstart.Kafka2Hive</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

@@ -74,6 +74,12 @@
     <orderEntry type="library" name="Maven: com.github.docker-java:docker-java-transport-zerodep:3.2.7" level="project" />
     <orderEntry type="library" name="Maven: com.github.docker-java:docker-java-transport:3.2.7" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.47" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-connector-hive_2.11:1.13.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-connector-files:1.13.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-sql-connector-hive-2.3.6_2.11:1.13.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-shaded-hadoop-2-uber:2.7.5-8.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-log4j12:1.7.15" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flink:flink-json:1.13.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.12.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.logging.log4j:log4j-api:2.12.1" level="project" />
@@ -85,7 +91,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-scala_2.11:1.13.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-table-planner-blink_2.11:1.13.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-table-common:1.13.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-connector-files:1.13.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.flink:flink-table-runtime-blink_2.11:1.13.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.janino:janino:3.0.11" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.janino:commons-compiler:3.0.11" level="project" />

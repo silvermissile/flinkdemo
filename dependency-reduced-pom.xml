@@ -87,7 +87,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>org.myorg.quickstart.StreamingJob</mainClass>
+                  <mainClass>org.myorg.quickstart.Kafka2Hive</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -177,6 +177,40 @@
         <exclusion>
           <artifactId>flink-core</artifactId>
           <groupId>org.apache.flink</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-connector-hive_2.11</artifactId>
+      <version>1.13.2</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>flink-connector-files</artifactId>
+          <groupId>org.apache.flink</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-sql-connector-hive-2.3.6_2.11</artifactId>
+      <version>1.13.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-shaded-hadoop-2-uber</artifactId>
+      <version>2.7.5-8.0</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>log4j</artifactId>
+          <groupId>log4j</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>slf4j-log4j12</artifactId>
+          <groupId>org.slf4j</groupId>
         </exclusion>
       </exclusions>
     </dependency>
