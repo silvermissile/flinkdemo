@@ -87,7 +87,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>org.myorg.quickstart.Kafka2Hive</mainClass>
+                  <mainClass>org.myorg.pro.Hive2HbaseAsi</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -182,6 +182,22 @@
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
+      <artifactId>flink-connector-hbase-1.4_2.11</artifactId>
+      <version>1.13.2</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>flink-connector-hbase-base_2.11</artifactId>
+          <groupId>org.apache.flink</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>netty-all</artifactId>
+          <groupId>io.netty</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
       <artifactId>flink-connector-hive_2.11</artifactId>
       <version>1.13.2</version>
       <scope>provided</scope>
@@ -194,7 +210,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
-      <artifactId>flink-sql-connector-hive-2.3.6_2.11</artifactId>
+      <artifactId>flink-sql-connector-hive-1.2.2_2.11</artifactId>
       <version>1.13.2</version>
       <scope>provided</scope>
     </dependency>

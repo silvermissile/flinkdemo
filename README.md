@@ -18,6 +18,8 @@ bin/flink run  -m jobmanager_ip:port  \
 ./examples/batch/WordCount.jar \
 --input hdfs:///tmp/people.txt \
 --output hdfs:///tmp/flink_people_k8s
+
+bin/flink run  -m yarn-cluster ./examples/batch/WordCount.jar --input hdfs:///tmp/people.txt --output hdfs:///tmp/flink_people_yarn
 ```
 
 ### 测试 flinkSQL
